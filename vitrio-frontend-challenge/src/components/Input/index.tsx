@@ -6,12 +6,13 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
     placeholder: string;
 }
 
-export function Input({ type, name, placeholder }: IInputProps) {
+export function Input({ type, name, placeholder, ...rest }: IInputProps) {
     return (
         <input 
             type={type}
             name={name} 
             placeholder={placeholder} 
+            {...rest}
         />
     );
 }

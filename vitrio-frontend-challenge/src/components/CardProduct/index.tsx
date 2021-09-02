@@ -6,7 +6,7 @@ import './styles.scss';
 interface ICardProductProps {
     image: string;
     title: string;
-    price: string;
+    price: any;
     priceDetails: string;
 }
 
